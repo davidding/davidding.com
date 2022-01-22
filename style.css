@@ -1,0 +1,28 @@
+:root {
+  --color-light: #eee;
+  --color-dark: #222;
+  --color-bg: var(--color-light);
+  --color-text: var(--color-dark);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: var(--color-dark);
+    --color-text: var(--color-light);
+  }
+}
+
+html {
+  font-family: sans-serif;
+  font-size: calc(1em + 1vw);
+  line-height: 1.5;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+body {
+  max-width: 36rem;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
